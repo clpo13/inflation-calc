@@ -1,4 +1,6 @@
-# Annual Consumer Price Indices (1913 to 2012)
+# Annual Consumer Price Indices (1913 to 2013)
+# source: http://www.bls.gov/cpi/
+#
 # TODO: include latest monthly CPI for present year
 
 1913: 9.900
@@ -101,3 +103,4 @@
 2010: 218.056
 2011: 224.939
 2012: 229.594
+2013: 232.957
