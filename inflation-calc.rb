@@ -10,9 +10,9 @@
 require 'yaml'
 cpi_list = YAML.load_file('cpi.yml')
 
-puts "Enter first year (1913-2013):"
+puts "Enter first year (1913-2016):"
 year_1 = gets.chomp.to_i
-puts "Enter second year (1913-2013):"
+puts "Enter second year (1913-2016):"
 year_2 = gets.chomp.to_i
 
 year_1_cpi = cpi_list[year_1]
