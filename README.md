@@ -22,6 +22,10 @@ chmod +x inflation-calc.rb
 
 * Ruby 1.9.3 or later
 
+### TODO
+
+- [ ] Pull data directly from [BLS](https://www.bls.gov/cpi/)
+
 ### License
 
 This code is free to use, modify, and distribute according to the terms of the MIT License,
