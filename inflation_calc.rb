@@ -10,15 +10,15 @@
 require 'yaml'
 cpi_list = YAML.load_file('cpi.yml')
 
-puts "Enter first year (1913-2016):"
-year_1 = gets.chomp.to_i
-puts "Enter second year (1913-2016):"
-year_2 = gets.chomp.to_i
+puts 'Enter first year (1913-2016):'
+year1 = gets.chomp.to_i
+puts 'Enter second year (1913-2016):'
+year2 = gets.chomp.to_i
 
-year_1_cpi = cpi_list[year_1]
-year_2_cpi = cpi_list[year_2]
+year1_cpi = cpi_list[year1]
+year2_cpi = cpi_list[year2]
 
-inflation_percent = (year_2_cpi - year_1_cpi) / year_1_cpi
+inflation_percent = (year2_cpi - year1_cpi) / year1_cpi
 
 # sprintf('%.2f' % number) or '%.2f' % number can be used in place of
 # Float#Round, adding zeroes after the decimal point if necessary.
@@ -27,5 +27,5 @@ puts "Cumulative inflation is #{(inflation_percent * 100).round(2)}%."
 then_now = 1 * (1 + inflation_percent)
 now_then = 1 / (1 + inflation_percent)
 
-puts "$1 in #{year_1} has the same buying power as $#{then_now.round(2)} in #{year_2}."
-puts "$1 in #{year_2} has the same buying power as $#{now_then.round(2)} in #{year_1}."
+puts "$1 in #{year1} has the same buying power as $#{then_now.round(2)} in #{year2}."
+puts "$1 in #{year2} has the same buying power as $#{now_then.round(2)} in #{year1}."
